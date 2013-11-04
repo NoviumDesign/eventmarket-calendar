@@ -2,10 +2,13 @@
 
 ## To run the code
 
-´´´ $ git clone ´´´
-´´´ $ cd to local clone of git repo ´´´
-´´´ $ bundle install ´´´
-´´´ $ bundle exec middleman server ´´´
+```$ git clone ```
+
+```$ cd ``` to local clone of git repo
+
+```$ bundle install```
+
+```$ bundle exec middleman server```
 
 ## Requirements
 
