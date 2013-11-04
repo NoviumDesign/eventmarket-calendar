@@ -1,0 +1,72 @@
+---
+title: Eventmarket ADM - Create/edit calendar
+body_class: index
+---
+.row
+  .col-md-12
+    %h1 Create/edit calendar
+    .panel.panel-default
+      .panel-heading
+        %span General calendar settings
+      %ul.list-group
+        %li.list-group-item
+          %form{role: "form"}
+            .form-group
+              %label{for: "exampleInputEmail1"} Calendar name (used for title-tag)
+              %input#exampleInputEmail1.form-control{placeholder: "Enter the name of the calendar", type: "text"}
+            .form-group
+              %label{for: "exampleInputPassword1"} Permalink ({current_domain}/zxy)
+              %input#exampleInputPassword1.form-control{placeholder: "Desired permalink for this calendar, i.e christmas2013", type: "text"}
+            .form-group
+              %label{for: "exampleInputFile"} Calendar background image
+              %input#exampleInputFile{type: "file"}
+              %p.help-block Plese provide the system with a image zxc X zxc px
+            .form-group
+              %label{for: "themecolor"} Calendar theme color
+              %input#themecolor.form-control.bscp{"data-colorpicker-guid" => "1", type: "text", value: "#ff0000"}
+
+            .checkbox
+              %label
+                %input{type: "checkbox"}/
+                Published
+
+    #accordion.panel-group
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            %a.accordion-toggle{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseOne"}
+              Item #1
+        #collapseOne.panel-collapse.collapse
+          .panel-body
+            .form-group
+              %label{for: "exampleInputEmail1"} Title
+              %input#exampleInputEmail1.form-control{placeholder: "Enter a name of this item", type: "text"}
+            .form-group
+              %label{for: "exampleInputFile"} Header image
+              %input#exampleInputFile{type: "file"}
+              %p.help-block Plese provide the system with a image zxc X zxc px
+            .form-group
+              %label{for: "themecolor"} Calendar theme color
+              %input#themecolor.form-control.bscp{"data-colorpicker-guid" => "1", type: "text", value: "#ff0000"}
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            %a.accordion-toggle{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseTwo"}
+              Item #2
+        #collapseTwo.panel-collapse.collapse
+          .panel-body
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            %a.accordion-toggle{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseThree"}
+              Item #3
+        #collapseThree.panel-collapse.collapse
+          .panel-body
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      .panel.panel-default
+        .panel-heading
+          %button.btn.btn-primary{type: "button"}
+            %span.glyphicon.glyphicon-plus
+            Add new
+          %button.btn.btn-success{type: "submit"} Save changes

@@ -1,0 +1,59 @@
+---
+title: Eventmarket ADM - View calendar
+body_class: calendar
+---
+%table.table.table-striped
+  %thead
+    %tr
+      %th.status
+      %th Name
+      %th
+  %tbody
+    %tr
+      %td.status.success
+      %td
+        %a{href: "calendar-create-edit.html"} Christmas 2013
+      %td
+        .btn-group.pull-right
+          %button.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+            %span.caret
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "/calendar-create-edit.html"} Edit
+            %li
+              %a{href: "#"} Publish/unpublish
+            %li.divider
+            %li
+              %a{href: "#", "data-target" => "#delete-modal", "data-toggle" => "modal"} Delete
+
+    %tr
+      %td.status.warning
+      %td
+        %a{href: "calendar-create-edit.html"} Easter 2014
+      %td
+        .btn-group.pull-right
+          %button.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+            %span.caret
+          %ul.dropdown-menu{role: "menu"}
+            %li
+              %a{href: "/calendar-create-edit.html"} Edit
+            %li
+              %a{href: "#"} Publish/unpublish
+            %li.divider
+            %li
+              %a{href: "#", "data-target" => "#delete-modal", "data-toggle" => "modal"} Delete
+
+.modal.fade#delete-modal
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+        %h4.modal-title Delete calendar
+      .modal-body
+        %p Do you really want to delete this calendar? This action can not be reverted. 
+
+        %p <b>TIP:</b> If you want to use this calendar again, you can just unpublish it.
+      .modal-footer
+        %button.btn.btn-primary{"data-dismiss" => "modal", type: "button"} Save it
+        %button.btn.btn-danger{type: "button"} Delete it
+
